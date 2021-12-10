@@ -1,0 +1,665 @@
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(../font/GothamBook.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  src: url(../font/SpoqaHanSansRegular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Birthstone Bounce';
+  src: url(../font/BirthstoneBounce-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Gotham Book';
+  font-family: 'Spoqa Han Sans';
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h5, figure, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+header .topmenu {
+  padding: 0 3%;
+  margin: 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+
+header .topmenu a {
+  width: 8%;
+}
+
+header .topmenu a img {
+  width: 100%;
+}
+
+header .topmenu .menu1 {
+  width: 50%;
+  text-transform: capitalize;
+}
+
+header .topmenu .menu1 a {
+  color: #000;
+  font-size: 1rem;
+  font-family: 'Gotham Book';
+  margin: 0 2%;
+}
+
+header .topmenu .menu2 {
+  width: 50%;
+  text-transform: capitalize;
+  text-align: right;
+}
+
+header .topmenu .menu2 a {
+  color: #3c3c3b;
+  font-size: 0.6rem;
+  font-family: 'Spoqa Han Sans';
+  margin: 0 1%;
+}
+
+header .topmenu .menu2 a:nth-of-type(7)::before {
+  content: '|';
+  margin-right: 2%;
+}
+
+main {
+  width: 100%;
+}
+
+main .visual {
+  position: relative;
+}
+
+main .visual img {
+  width: auto;
+  height: 100vh;
+}
+
+main .visual .text {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+main .visual .text h1 {
+  color: #333333;
+  font-size: 3rem;
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-family: 'Gotham Book';
+}
+
+main .visual .text p {
+  color: #333333;
+  font-size: 1.15rem;
+  font-weight: bold;
+  font-family: 'Gotham Book';
+}
+
+main .quick .cart span::after {
+  content: '';
+  width: 7%;
+  height: 7%;
+  background: url(../img/quickcart.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+main .quick .found span::after {
+  content: '';
+  width: 7%;
+  height: 7%;
+  background: url(../img/quickfound.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+}
+
+main .quick .chat span::after {
+  content: '';
+  width: 7%;
+  height: 7%;
+  background: url(../img/quickchat.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+main .indi ul li span {
+  width: 10px;
+  height: 10px;
+  background: #333333;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+main .product {
+  width: 88%;
+  margin: 8% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .product .mattress {
+  width: 48%;
+}
+
+main .product .mattress img {
+  width: 100%;
+}
+
+main .product .mattress figcaption {
+  font-family: 'Spoqa Han Sans';
+  font-size: 16px;
+  color: #333333;
+  margin-top: 3%;
+}
+
+main .product .mattress figcaption p {
+  font-family: 'Birthstone Bounce';
+  font-size: 2rem;
+  color: #8cbabf;
+}
+
+main .product .pillow {
+  width: 48%;
+}
+
+main .product .pillow img {
+  width: 100%;
+}
+
+main .product .pillow figcaption {
+  font-family: 'Spoqa Han Sans';
+  font-size: 16px;
+  color: #333333;
+  margin-top: 3%;
+}
+
+main .product .pillow figcaption p {
+  font-family: 'Birthstone Bounce';
+  font-size: 2rem;
+  color: #8cbabf;
+}
+
+main .reviews {
+  width: 88%;
+  margin: 8% auto 20% auto;
+}
+
+main .reviews hr {
+  width: 260px;
+  border-top: 3px solid #3c3c3b;
+  margin: 2% 0;
+}
+
+main .reviews h2 {
+  margin-bottom: 4%;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Gotham Book';
+}
+
+main .reviews div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .reviews div .content {
+  width: 70%;
+}
+
+main .reviews div ul {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .reviews div ul li {
+  width: 23%;
+}
+
+main .reviews div ul li a {
+  font-family: 'Spoqa Han Sans';
+  font-size: 1rem;
+  color: #3c3c3b;
+  line-height: 2;
+}
+
+main .reviews div ul li a img {
+  width: 100%;
+}
+
+main .reviews div ul li a .icon {
+  width: 80px;
+}
+
+main .reviews div ul li a p {
+  font-family: 'Spoqa Han Sans';
+  font-size: 0.8rem;
+  color: #3c3c3b;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+main .reviews div ul li a .name {
+  font-size: 0.8rem;
+  color: #bdbcbc;
+  line-height: 3;
+}
+
+main .reviews div .button {
+  width: 30%;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .reviews div .button .thanks {
+  font-family: 'Birthstone Bounce';
+  font-size: 1.5rem;
+  color: #8cbabf;
+  margin: 3% auto;
+}
+
+main .reviews div .button p {
+  font-family: 'Gotham Book';
+  font-size: 1.8rem;
+  margin: 15% auto;
+}
+
+main .reviews div .button a {
+  padding: 20px 50px;
+  font-family: 'Gotham Book';
+  font-size: 1rem;
+  background-color: #8cbabf;
+  color: #fff;
+}
+
+main .about {
+  width: 88%;
+  margin: 8% auto 25% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Spoqa Han Sans';
+}
+
+main .about .tribe {
+  width: 50%;
+  position: relative;
+}
+
+main .about .tribe .tri {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+main .about .tribe .tri hr {
+  width: 180px;
+  border-bottom: 3px solid #3c3c3b;
+  margin: 10% 0;
+}
+
+main .about .tribe .tri h3 {
+  text-transform: capitalize;
+  font-family: 'Gotham Book';
+  font-size: 2rem;
+  color: #3c3c3b;
+}
+
+main .about .tribe a img {
+  width: 80%;
+  margin-left: 20%;
+}
+
+main .about .tribe .large {
+  font-size: 1rem;
+  color: #3c3c3b;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+
+main .about .tribe p {
+  font-size: 0.8rem;
+  color: #bdbcbc;
+  margin-left: 20%;
+}
+
+main .about .tribe .btn {
+  text-align: right;
+}
+
+main .about .tribe .btn a {
+  text-transform: capitalize;
+  font-family: 'Gotham Book';
+  font-size: 0.8rem;
+  color: #3c3c3b;
+  border: 1px solid #8a8a8a;
+  padding: 10px 30px;
+  border-radius: 8%;
+}
+
+main .about .lab {
+  width: 50%;
+  position: relative;
+}
+
+main .about .lab .la {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+main .about .lab .la hr {
+  width: 180px;
+  border-bottom: 3px solid #3c3c3b;
+  margin: 10% 0;
+}
+
+main .about .lab .la h4 {
+  text-transform: capitalize;
+  font-family: 'Gotham Book';
+  font-size: 2rem;
+  color: #3c3c3b;
+}
+
+main .about .lab a img {
+  width: 80%;
+  margin-left: 20%;
+}
+
+main .about .lab .large {
+  font-size: 1rem;
+  color: #3c3c3b;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+
+main .about .lab p {
+  font-size: 0.8rem;
+  color: #bdbcbc;
+  margin-left: 20%;
+}
+
+main .about .lab .btn {
+  text-align: right;
+}
+
+main .about .lab .btn a {
+  text-transform: capitalize;
+  font-family: 'Gotham Book';
+  font-size: 0.8rem;
+  color: #3c3c3b;
+  border: 1px solid #8a8a8a;
+  border-radius: 8%;
+  padding: 10px 30px;
+}
+
+footer {
+  width: 100%;
+  background-color: #eeeeee;
+  font-family: 'Spoqa Han Sans';
+}
+
+footer .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5% 6%;
+  padding: 4% 0;
+}
+
+footer .foot .customer {
+  width: 20%;
+  margin-right: 3%;
+}
+
+footer .foot .customer h5 {
+  font-size: 0.8rem;
+  color: #3c3c3b;
+  border-bottom: 1px solid #bdbcbc;
+  line-height: 3;
+}
+
+footer .foot .customer p {
+  font-size: 1.25rem;
+  color: #3c3c3b;
+}
+
+footer .foot .customer p:nth-of-type(1) {
+  margin-top: 10%;
+}
+
+footer .foot .customer p:nth-of-type(3) {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin: 3% 0 10% 0;
+}
+
+footer .foot .customer p:nth-of-type(4) {
+  font-size: 0.8rem;
+  color: #3c3c3b;
+}
+
+footer .foot .business {
+  width: 20%;
+  margin-right: 3%;
+}
+
+footer .foot .business p:nth-of-type(1) {
+  font-size: 0.8rem;
+  color: #3c3c3b;
+  border-bottom: 1px solid #bdbcbc;
+  line-height: 3;
+}
+
+footer .foot .business p:nth-of-type(2) {
+  margin-top: 10%;
+}
+
+footer .foot .business p:nth-of-type(2) a {
+  font-size: 1.25rem;
+  color: #3c3c3b;
+  font-family: 'Gotham Book';
+}
+
+footer .foot .business p:nth-of-type(3) {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin: 3% 0 10% 0;
+}
+
+footer .foot .business p:nth-of-type(4) {
+  font-size: 0.8rem;
+  color: #3c3c3b;
+}
+
+footer .foot .qm {
+  width: 10%;
+  margin-right: 5%;
+}
+
+footer .foot .qm p {
+  font-size: 0.8rem;
+  color: #3c3c3b;
+}
+
+footer .foot .qm p a {
+  display: inline-block;
+  margin-bottom: 18%;
+}
+
+footer .foot .qm p:nth-of-type(1) {
+  font-size: 0.8rem;
+  color: #3c3c3b;
+  border-bottom: 1px solid #bdbcbc;
+  text-transform: capitalize;
+  font-family: 'Gotham Book';
+  line-height: 3;
+}
+
+footer .foot .qm p:nth-of-type(2) {
+  margin-top: 15%;
+}
+
+footer .foot .qm p:nth-of-type(2) a {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  font-family: 'Gotham Book';
+}
+
+footer .foot .qm p:nth-of-type(3) {
+  font-weight: bold;
+}
+
+footer .foot .info {
+  width: 39%;
+}
+
+footer .foot .info p {
+  font-size: 0.8rem;
+  color: #3c3c3b;
+}
+
+footer .foot .info a {
+  font-size: 0.8rem;
+  color: #3c3c3b;
+}
+
+footer .foot .info a:nth-of-type(1) {
+  border: 1px solid #3c3c3b;
+  padding: 10px 20px;
+}
+
+footer .foot .info a:nth-of-type(2) {
+  border: 1px solid #3c3c3b;
+  padding: 10px 20px;
+  margin-right: 0.8%;
+}
+
+footer .foot .info a:nth-of-type(2) img {
+  width: 5%;
+}
+
+footer .foot .info a:nth-of-type(3) {
+  border: 1px solid #3c3c3b;
+  padding: 10px 20px;
+}
+
+footer .foot .info a:nth-of-type(3) img {
+  width: 5%;
+}
+
+footer .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #bdbdbd;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1% 0;
+}
+
+footer .icon .brand {
+  margin-left: 6%;
+}
+
+footer .icon .sns {
+  margin-right: 6%;
+}
+/*# sourceMappingURL=index.css.map */
